@@ -1,0 +1,87 @@
+
+:root {
+    --dark-blue: #1d2227;
+    --blue-1: #333f4d;
+    --blue: #3D4B5B;
+    --blue1: #47586B;
+    --blue2: #52657A;
+    --gray-1: #6D6E71;
+    --gray: #939598;
+    --gray2: #e0e0e0;
+    --gray-transparent:#ffffff40;
+    --orange: #F58220;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    color: white;
+}
+
+.dialog {
+    background-color: var(--blue1);
+    width: 400px;
+}
+
+.dialog.open {
+    display: inline-block;
+}
+
+.dialog > .title {
+    background-color: var(--blue-1);
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+
+    padding: 15px;
+    cursor: grab;
+    border-bottom: 1px solid var(--gray);
+}
+
+.dialog > .title .btn{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+.dialog > .title .btn:hover{
+    background-color: var(--blue);
+    border: 1px solid white;
+}
+
+.dialog .scrollable{
+    overflow: auto;
+}
+
+.dialog .form-panel {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--blue2);
+}
+
+.form-panel.horizontal {
+    display: block;
+}
+
+.form-panel.horizontal:last-child {
+    display: block;
+}
+
+.form-panel.vertical {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-panel b {
+    color: orange;
+}
+
+li {
+    margin-bottom: 10px;
+}
